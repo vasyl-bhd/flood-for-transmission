@@ -5,7 +5,12 @@ const PATHS_STORAGE_KEY = 'paths';
 function getPaths() {
   const storedPaths = window.localStorage.getItem(PATHS_STORAGE_KEY);
   if (storedPaths) return JSON.parse(storedPaths);
-  return [];
+  return [
+    "/downloads/Anime",
+    "/downloads/TV Shows",
+    "/downloads/Movies",
+    "/downloads/"
+  ];
 }
 
 function cleanValue(value) {
